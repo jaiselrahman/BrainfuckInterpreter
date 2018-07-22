@@ -1,7 +1,7 @@
 CC=gcc
 PREFIX=/usr/local
 
-bf:
+bf: brainfuck.c
 	$(CC) -o bf brainfuck.c
 
 install: bf

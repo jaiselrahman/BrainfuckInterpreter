@@ -28,6 +28,7 @@ int main(int argc, char* argv[]) {
         s = readFromFile(argv[1]);
         if (s == NULL) {
             fprintf(stderr, "Cannot open file : %s", argv[1]);
+            return 1;
         }
     } else {
         s = calloc(SIZE, sizeof(char));
